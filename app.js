@@ -32,5 +32,7 @@ app.listen(port, (err) => {
 });
 
 app.post("/api/movies", movieHandlers.postMovie);
-
 app.post("/api/users", users.postUser);
+
+app.put("/api/movies/:id", movieHandlers.updateMovie);
+app.put("/api/users/:id", users.updateUser);
